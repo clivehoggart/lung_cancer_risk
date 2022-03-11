@@ -11,10 +11,11 @@ Alternatively, download the source files from the github website
 (https://github.com/clivehoggart/lung_cancer_risk.git)
 
 # To run
-Load function in R \
-source("")
+Load function in R
 
-Call function:\
+	source("lung_cancer_risk/lung_cancer_risk.R")
+
+Call function:
 
 	pred.lung( age, age.start, age.stop, smoke.intensity, future )
 	
