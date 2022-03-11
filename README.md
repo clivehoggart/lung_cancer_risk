@@ -29,6 +29,7 @@ Call function:
 	
 	future -- number of years into the future you wish to predict the individuals' risk of lung cancer
 	
+All arguments can a vector of values for multiple individuals or a single numeric.\
 Examples:
 
 	pred.lung( age=c(60,60,65), age.start=c(20,25,30), age.stop=c(40,50,60), smoke.intensity=c(20,20,20), future=5 )
