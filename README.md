@@ -28,3 +28,13 @@ Call function:
 	smoke.intensity -- average number of cigarettes smoked per day
 	
 	future -- number of years into the future you wish to predict the individuals' risk of lung cancer
+	
+Examples:
+
+pred.lung( age=60, age.start=20, smoke.intensity=20, future=5 )
+          [,1]
+[1,] 0.1030972
+pred.lung( age=60, age.start=20, age.stop=40, smoke.intensity=20, future=5 )
+         [,1]
+[1,] 0.012406
+
