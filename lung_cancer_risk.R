@@ -1,3 +1,19 @@
+surv <- function (a, b, t){
+    return(exp(-(t/b)^a))
+}
+
+preds1yr <- function(coefficients, no.strata, strat, x, t0, t1){
+  ptr = length(coefficients) - 2 * no.strata + 1
+#  print(no.strata)
+  scale = exp(coefficients[ptr + 2 * strat])
+  shape = exp(coefficients[ptr + 1 + 2 * strat])
+  eta = exp(x %*% as.matrix(coefficients[1]))
+  surv0 = surv(shape, scale, t0)^eta
+  surv1 = surv(shape, scale, t1)^eta
+  preds = 1 - surv1/surv0
+  return(preds)
+}
+
 pred.lung <- function(age.start, age.stop=NA, smoke.intensity, age, future){
   cancer.coef <- list()
   death.coef <- list()
