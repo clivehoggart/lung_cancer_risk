@@ -18,8 +18,12 @@ Call function:\
 	pred.lung( age, age.start, age.stop, smoke.intensity, future )
 
 Arguments to the function are:
-	age -- in years \
-	age.start -- age started smoking (years) \
-	age.stop -- age stopped smoking, leave blank or set to NA for current smokers (years) \
-	smoke.intensity -- average number of cigarettes smoked per day \
+	age -- in years
+	
+	age.start -- age started smoking (years)
+	
+	age.stop -- age stopped smoking, leave blank or set to NA for current smokers (years)
+	
+	smoke.intensity -- average number of cigarettes smoked per day
+	
 	future -- number of years into the future you wish to predict the individuals' risk of lung cancer
