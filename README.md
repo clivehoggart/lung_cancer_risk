@@ -15,9 +15,9 @@ Load function in R \
 source("")
 
 Call function:\
-	pred.lung( age, age.start, age.stop, smoke.intensity, future )
 
-Arguments to the function are:
+pred.lung( age, age.start, age.stop, smoke.intensity, future )
+	
 	age -- in years
 	
 	age.start -- age started smoking (years)
