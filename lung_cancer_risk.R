@@ -78,7 +78,7 @@ pred.lung <- function(age.start, age.stop=NA, smoke.intensity, age, future){
                 "log(scale):13", "log(shape):13"))
 
   current <- is.na(age.stop)
-  if( current ){
+  if( current[1] ){
     smoke.intensity <- ifelse(smoke.intensity<15, smoke.intensity, 15) - 11.27674
     ptr <- 1
     no.strata <- 8
@@ -90,7 +90,7 @@ pred.lung <- function(age.start, age.stop=NA, smoke.intensity, age, future){
     strat = ifelse( age.start > 28, 6, strat )
     strat = ifelse( age.start > 30, 7, strat )
   }
-  if( !current ){
+  if( !current[1] ){
     smoke.intensity <- ifelse(smoke.intensity<15, smoke.intensity, 15) - 10.27171
     ptr <- 2
     no.strata <- 13
