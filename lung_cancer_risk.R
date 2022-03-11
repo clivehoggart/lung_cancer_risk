@@ -1,4 +1,4 @@
-pred.lung <- function(age.start, age.stop, smoke.intensity, age, future){
+pred.lung <- function(age.start, age.stop=NA, smoke.intensity, age, future){
   cancer.coef <- list()
   death.coef <- list()
   death.coef[[1]] <-
