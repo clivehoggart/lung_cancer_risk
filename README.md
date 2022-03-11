@@ -16,7 +16,7 @@ source("")
 
 Call function:\
 
-pred.lung( age, age.start, age.stop, smoke.intensity, future )
+	pred.lung( age, age.start, age.stop, smoke.intensity, future )
 	
 	age -- in years
 	
