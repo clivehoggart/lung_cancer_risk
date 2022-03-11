@@ -32,10 +32,12 @@ Call function:
 Examples:
 
 	pred.lung( age=c(60,60,65), age.start=c(20,25,30), age.stop=c(40,50,60), smoke.intensity=c(20,20,20), future=5 )
-            [,1]
-[1,] 0.012405999
-[2,] 0.002867859
-[3,] 0.001406955
+
+		    [,1]
+	[1,] 0.012405999
+	[2,] 0.002867859
+	[3,] 0.001406955
+	
 	pred.lung( age=c(60,60,65), age.start=c(20,25,30), smoke.intensity=c(20,20,20), future=5 )
             [,1]
 [1,] 0.103097151
