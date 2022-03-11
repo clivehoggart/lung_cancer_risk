@@ -19,7 +19,11 @@ Call function:\
 
 Arguments to the function are:
   age -- in years
+  
   age.start -- age started smoking (years)
+  
   age.stop -- age stopped smoking, leave blank or set to NA for current smokers (years)
+  
   smoke.intensity -- average number of cigarettes smoked per day
+  
   future -- number of years into the future you wish to predict the individuals' risk of lung cancer
